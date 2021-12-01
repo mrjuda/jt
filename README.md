@@ -6,7 +6,7 @@
 - CSS
 
 ## Live Demo
-[a live demo was unnecessary]
+- Live version: [mrjuda.github.io/jt](https://mrjuda.github.io/jt/)
 
 ## Authors
 Judá F Teixeira

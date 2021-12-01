@@ -1,0 +1,23 @@
+{
+  "name": "jt",
+  "version": "1.0.0",
+  "description": "> This is Judá's Portfolio project, made as part of the Microverse Program.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrjuda/jt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrjuda/jt/issues"
+  },
+  "homepage": "https://github.com/mrjuda/jt#readme",
+  "devDependencies": {
+    "hint": "^6.1.9"
+  }
+}
