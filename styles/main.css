@@ -62,6 +62,11 @@ h1 {
   color: rgb(131, 131, 255);
 }
 
+.footer h4 {
+  font-size: 15px;
+  margin-bottom: -8px;
+}
+
 .icon-bar {
   list-style-type: none;
   margin-left: -40px;
@@ -72,5 +77,4 @@ h1 {
 
 .icon-bar img {
   height: 25px;
-  /* align-content: center; */
 }
