@@ -1,5 +1,5 @@
 body {
-  background: #fff url("../images/bg.png") 0px 0px no-repeat;
+  background: #fff url("../images/bg.png") no-repeat;
   background-size: cover;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   display: flex;
