@@ -37,7 +37,7 @@ header {
 }
 
 .main {
-  background: #ffffff url("../images/bg.png") 50% 10px no-repeat;
+  background: #fff url("../images/bg.png") 50% 10px no-repeat;
 }
 
 .footer {
@@ -59,8 +59,4 @@ header {
 
 .icon-bar img {
   height: 30px;
-}
-
-.li {
-
 }
