@@ -1,4 +1,6 @@
 body {
+  background: #fff url("../images/bg.png") 0px 0px no-repeat;
+  background-size: cover;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
@@ -32,12 +34,8 @@ header {
   padding: 5px 60px;
   color: blue;
   background: rgb(255, 255, 255);
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.9);
   z-index: 1;
-}
-
-.main {
-  background: #fff url("../images/bg.png") 50% 10px no-repeat;
 }
 
 .footer {
@@ -51,10 +49,6 @@ header {
   margin-right: 50%;
   display: flex;
   justify-content: space-between;
-}
-
-.icon-bar a {
-  /* width: 15%; */
 }
 
 .icon-bar img {
