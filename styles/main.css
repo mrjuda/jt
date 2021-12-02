@@ -37,7 +37,7 @@ header {
 }
 
 .main {
-  background: #ffffff url("../images/bg.png") 55px 10px no-repeat;
+  background: #ffffff url("../images/bg.png") 50% 10px no-repeat;
 }
 
 .footer {
