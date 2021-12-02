@@ -1,3 +1,56 @@
+body {
+  background: #fff url("../images/bg.png") no-repeat;
+  background-size: cover;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  height: 35px;
+}
+
+.menu img {
+  height: 35px;
+}
+
+.content {
+  margin-top: 30px;
+  padding: 5px 60px;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.bg {
+  position: absolute;
+  padding: 40px 40px;
+  z-index: -1;
+}
+
 header {
-  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 5px 60px;
+  color: blue;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+}
+
+.footer {
+  padding: 5px 60px;
+  color: lightskyblue;
+}
+
+.icon-bar {
+  list-style-type: none;
+  margin-left: -40px;
+  margin-right: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-bar img {
+  height: 30px;
 }
