@@ -4,14 +4,9 @@ body {
   flex-direction: column;
 }
 
-.content, 
-header, 
-.footer {
-  padding: 5px 60px;
-}
-
 .content {
   margin-top: 30px;
+  padding: 5px 60px
 }
 
 .bg {
@@ -24,6 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  padding: 5px 60px
   color: blue;
   background: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.2);
@@ -36,7 +32,7 @@ header {
 }
 
 .footer {
-  /* padding: 5px 40px; */
+  padding: 5px 60px
   color: lightskyblue;
 }
 
