@@ -32,8 +32,6 @@ header a {
 
 .logo a {
   font-size: 20px;
-  
-  /* height: 10px; */
 }
 
 .menu img {
@@ -54,10 +52,6 @@ h1 {
 .content {
   color: rgb(100, 100, 100);
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  
-  /* font-size: 15px; */
-  
-  /* line-height: 25px; */
 }
 
 .footer {
