@@ -17,7 +17,6 @@ header,
 .bg {
   position: absolute;
   padding: 40px 40px;
-  /* width: 470px; */
   z-index: -1;
 }
 
