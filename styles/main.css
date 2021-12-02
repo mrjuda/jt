@@ -1,6 +1,6 @@
 body {
   padding: 5px 20px;
-  background: #fff url("../images/bg.png") 0px 45px no-repeat;
+  background: #fff url("../images/bg.png") 1px 45px no-repeat;
   background-size: cover;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   display: flex;
@@ -15,7 +15,7 @@ header {
 
 header a {
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  color:blue;
+  color: blue;
   font-weight: 700;
   font-size: 25px;
   line-height: 25px;
@@ -32,6 +32,7 @@ header a {
 
 .logo a {
   font-size: 20px;
+  
   /* height: 10px; */
 }
 
@@ -53,7 +54,9 @@ h1 {
 .content {
   color: rgb(100, 100, 100);
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  
   /* font-size: 15px; */
+  
   /* line-height: 25px; */
 }
 
