@@ -26,7 +26,7 @@ body {
   margin-bottom: 200px;
 }
 
-.bg-card {
+.card {
   border-radius: 20px;
   background: #fff;
   width: 300px;
@@ -125,14 +125,16 @@ header .menu img {
 }
 
 .works {
+  display: grid;
   padding-top: 110px;
   padding-bottom: 110px;
 }
 
 .main h1,
-.works h1,
-.about h1,
-.contact h1 {
+.main h2,
+.works h2,
+.about h2,
+.contact h2 {
   color: #172b4d;
   font-size: 40px;
   line-height: 48px;
