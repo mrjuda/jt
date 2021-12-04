@@ -148,7 +148,7 @@ header .menu img {
   padding: 15px;
 }
 
-#categories {
+.categories {
   display: flex;
   color: #777;
   font-size: 13px;
@@ -156,7 +156,7 @@ header .menu img {
   cursor: pointer;
 }
 
-#categories #canopy {
+.categories .canopy {
   color: #333;
 }
 
@@ -200,11 +200,11 @@ header .menu img {
   padding: 5px;
 }
 
-#categories li {
+.categories li {
   padding-right: 5px;
 }
 
-#cta-button {
+.cta-button {
   color: #396df2;
   border: 1px solid #6070ff;
   width: max-content;
@@ -218,7 +218,7 @@ header .menu img {
   cursor: pointer;
 }
 
-#cta-button:hover {
+.cta-button:hover {
   background-color: #396df2;
   color: #fff;
 }
