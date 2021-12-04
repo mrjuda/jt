@@ -27,7 +27,7 @@
       </div>
     </header>
   
-    <div class="main">
+    <div class="main" id="bg-main">
       <div class="content">
         <h1>I'm Jud&aacute; <br> Glad to see <br> you!</h1>
         <p>
@@ -39,7 +39,7 @@
           hesitate to contact me.
         </p>
       </div>
-      <div class="footer">
+      <div class="socials">
         <h4>LET'S CONNECT</h4>
         <ul class="icon-bar">
           <li><a href="#">
@@ -60,9 +60,9 @@
         </ul>
       </div>
     </div> <!-- End of MAIN -->
-
+    
     <div class="works"> <!-- WORKS -->
-      <div id="bg-works">
+      <div id="bg-card">
         <img src="images/tonic-1.png" alt="Tonic project seakpeak">
         <h1>Tonic</h1>
         <ul class="categories">
@@ -79,10 +79,10 @@
           <li>css</li>
           <li>javaScript</li>
         </ul>
-        <div class="cta-button">See Project</div>
+        <div id="cta-button">See Project</div>
       </div>
 
-      <div id="bg-works">
+      <div id="bg-card">
         <img src="images/mps-1.png" alt="MPS project seakpeak">
         <h1>Multi-Post 
           <br>Stories</h1>
@@ -100,10 +100,10 @@
           <li>css</li>
           <li>javaScript</li>
         </ul>
-        <div class="cta-button">See Project</div>
+        <div id="cta-button">See Project</div>
       </div>
 
-      <div id="bg-works">
+      <div id="bg-card">
         <img src="images/tonic-2.png" alt="Tonic project seakpeak">
         <h1>Tonic</h1>
         <ul class="categories">
@@ -120,10 +120,10 @@
           <li>css</li>
           <li>javaScript</li>
         </ul>
-        <div class="cta-button">See Project</div>
+        <div id="cta-button">See Project</div>
       </div>
 
-      <div id="bg-works">
+      <div id="bg-card">
         <img src="images/mps-2.png" alt="Tonic project seakpeak">
         <h1>Multi-Post 
           <br>Stories</h1>
@@ -141,43 +141,78 @@
           <li>css</li>
           <li>javaScript</li>
         </ul>
-        <div class="cta-button">See Project</div>
+        <div id="cta-button">See Project</div>
       </div>
-    </div>
+    </div> <!-- End of WORKS -->
 
-    <div class="about">
-      <h1>About <br>Myself</h1>
-      <div class="ab1">
-        AB1: "About me" + Resume
+    <div class="about" id="bg-about">
+      <div class="content">
+        <h1>About <br>Myself</h1>
+        <p>
+          I'm a software developer! I can help you 
+          build a product, feature or website Look 
+          through some of my work and 
+          experience! If you like what you see and 
+          have a project you need coded, don't 
+          hesitate to contact me.
+        </p>
       </div>
-      <div class="ab2">
-        AB2: Languages + Frameworks + Skills
-        <br>
-        <br>LANGUAGES
-        <ul class="languages">
-          <li>JavaScript</li>
-          <li>HTML</li>
-          <li>CSS</li>
+      <div class="socials">
+        <h4>LET'S CONNECT</h4>
+        <ul class="icon-bar">
+          <li><a href="#">
+            <img src="images/twitter.png" alt="Twitter logo">
+          </a></li>
+          <li><a href="#">
+            <img src="images/linkedin.png" alt="Linkedin logo">
+          </a></li>
+          <li><a href="#">
+            <img src="images/facebook.png" alt="Facebook logo">
+          </a></li>
+          <li><a href="#">
+            <img src="images/github.png" alt="Github logo">
+          </a></li>
+          <li><a href="#">
+            <img src="images/instagram.png" alt="Instagram logo">
+          </a></li>
         </ul>
-        <br>Frameworks
-        <ul class="frameworks">
-          <li>React</li>
-          <li>Vue.js</li>
-          <li>AngularJS</li>
-          <li>Node.JS</li>
-          <li>jQuery</li>
-        </ul>
-        <br>AB3: Skills
-        <ul class="skills">
-          <li>React</li>
-          <li>Vue.js</li>
-          <li>AngularJS</li>
-          <li>Node.JS</li>
-          <li>jQuery</li>
-        </ul>
+        <div id="cta-button">Get my resume</div>
       </div>
-    </div>
+      
+      <div class="tech" id="tech-menu">
+        <details>
+          <summary>Languages</summary>
+          <ul class="languages">
+            <li><img src="images/button-javascript.png" alt="javascript logo"></li>
+            <li><img src="images/button-html.png" alt="html logo"></li>
+            <li><img src="images/button-css.png" alt="css logo"></li>
+          </ul>
+        </details>
+        
+        <details>
+          <summary>Frameworks</summary>
+          <ul>
+            <li>React</li>
+            <li>Vue.js</li>
+            <li>AngularJS</li>
+            <li>Node.JS</li>
+            <li>jQuery</li>
+          </ul>
+        </details>
+        
+        <details>
+          <summary>Skills</summary>
+          <ul>
+            <li>Web architecture</li>
+            <li>Database systems</li>
+            <li>Graphic design</li>
+          </ul>
+        </details>
+      </div>
 
+    </div> <!-- End of ABOUT -->
+    
   </div> <!-- End of grid-container -->
+  
 </body>
 </html>
