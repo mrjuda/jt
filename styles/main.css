@@ -108,11 +108,9 @@ header .menu img {
 }
 
 .socials .icon-bar {
-  list-style-type: none;
-  margin-left: -40px;
-  margin-right: 40%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 15px;
 }
 
 .socials .icon-bar img {
@@ -179,15 +177,8 @@ header .menu img {
   cursor: pointer;
 }
 
-.keyword li:hover {
-  background-color: #6070ff;
-  color: #fff;
-}
-
-.tech ul {
-  list-style-type: none;
-  margin-top: 5px;
-  padding: 5px 20px;
+.categories li {
+  padding-right: 5px;
 }
 
 .tech li {
@@ -198,8 +189,20 @@ header .menu img {
   padding: 5px;
 }
 
-.categories li {
-  padding-right: 5px;
+.keyword li:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+details > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.tech ul {
+  list-style-type: none;
+  margin-top: 5px;
+  padding: 5px 20px;
 }
 
 .cta-button {
@@ -207,7 +210,6 @@ header .menu img {
   border: 1px solid #6070ff;
   width: max-content;
   border-radius: 8px;
-  /* align-self: left; */
   text-align: center;
   padding: 12px;
   font-size: 17px;
@@ -263,9 +265,3 @@ summary::before {
 details[open] > summary::before {
   transform: rotate(90deg);
 }
-
-details > ul {
-  padding-bottom: 1rem;
-  margin-bottom: 0;
-}
-
