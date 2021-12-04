@@ -15,7 +15,7 @@ body {
 /* RESET UL's PADDING */
 
 ul {
-	padding: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -153,17 +153,11 @@ header .menu img {
   color: #777;
   font-size: 13px;
   font-weight: 600;
-  list-style: none;
-  list-style: none;
   cursor: pointer;
 }
 
 #categories #canopy {
   color: #333;
-}
-
-#categories li {
-  padding-right: 5px;
 }
 
 .keyword {
@@ -192,12 +186,30 @@ header .menu img {
   color: #fff;
 }
 
+.tech ul {
+  list-style-type: none;
+  margin-top: 5px;
+  padding: 5px 20px;
+}
+
+.tech li {
+  border-radius: 4%;
+  color: #444;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 5px;
+}
+
+#categories li {
+  padding-right: 5px;
+}
+
 #cta-button {
   color: #396df2;
   border: 1px solid #6070ff;
   width: max-content;
   border-radius: 8px;
-  align-self: left;
+  /* align-self: left; */
   text-align: center;
   padding: 12px;
   font-size: 17px;
@@ -259,16 +271,3 @@ details > ul {
   margin-bottom: 0;
 }
 
-.tech ul {
-  list-style-type: none;
-  margin-top: 5px;
-  padding: 5px 20px;
-}
-
-.tech li {
-  border-radius: 4%;
-  color: #444;
-  font-weight: 500;
-  font-size: 15px;
-  padding: 5px;
-}
