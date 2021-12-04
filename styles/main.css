@@ -16,17 +16,17 @@ body {
   background: #fff url("../images/bg.png") no-repeat;
   width: 370px;
   margin-bottom: 100px;
-  border-radius: 0px 0px 0px 100px;
+  border-radius: 1px 1px 1px 100px;
 }
 
 #bg-about {
-  border-radius: 0px 100px 0px 0px;
+  border-radius: 1px 100px 1px 1px;
   background: #fff;
   width: 370px;
   margin-bottom: 200px;
 }
 
-#bg-card {
+.bg-card {
   border-radius: 20px;
   background: #fff;
   width: 300px;
@@ -39,8 +39,9 @@ body {
 .grid-container {
   background-color: rgb(243, 243, 243);
   display: grid;
-  grid-template-areas: 
-    'header'
+  grid-template-areas:
+  
+  'header'
     'main'
     'works'
     'about';
@@ -68,7 +69,6 @@ header a {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  font-weight: 700;
   text-decoration: none;
 }
 
@@ -100,15 +100,13 @@ header .menu img {
 
 .socials {
   color: rgb(131, 131, 255);
-  font-family: poppins;
+  font-family: poppins, Arial, Helvetica, sans-serif;;
   font-weight: 500;
   margin-left: 20px;
   padding-bottom: 80px;
 }
 
 .socials h4 {
-  margin: 0px 0px;
-  padding: 0px;
   height: 24px;
   font-size: 18px;
   font-weight: 500;
@@ -141,7 +139,7 @@ header .menu img {
 }
 
 .works .categories {
-  padding-inline-start: 0px;
+  padding-inline-start: 1px;
   display: flex;
   list-style: none;
   font-weight: 600;
@@ -151,57 +149,57 @@ header .menu img {
   color: #333;
 }
 
+.tech li {
+  border-radius: 4%;
+  color: #444;
+  text-align: left;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
 .works .categories li {
   list-style: none;
   color: #777;
   font-size: 13px;
-  margin: 0px 2px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
   padding-right: 5px;
   text-align: center;
-  justify-content: first baseline;
   cursor: pointer;
 }
 
 .works .keyword {
-  margin-left: 0px;
-  padding-inline-start: 0px;
+  padding-inline-start: 1px;
   list-style: none;
   display: flex;
   justify-content: flex-start;
-  
 }
 
 .works .keyword li {
   background-color: #ebebff;
   border-radius: 15%;
-  color: #6070FF;
-  margin: 0px 5px;
+  color: #6070ff;
+  margin: 1px 5px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
-  justify-content: first baseline;
   font-weight: 500;
   font-size: 12px;
   cursor: pointer;
 }
 
-#cta-button {
+.cta-button {
   color: #396df2;
   border: 1px solid #6070ff;
   box-sizing: border-box;
   border-radius: 8px;
   padding: 12px;
-  
   font-size: 17px;
   line-height: 24px;
   font-weight: 400;
   align-self: center;
-
   text-align: left;
   display: inline-block;
   margin: 5px 2px;
@@ -209,7 +207,7 @@ header .menu img {
 }
 
 .tech {
-  border-radius: 0px 100px 0px 0px;
+  border-radius: 1px 100px 1px 1px;
   width: 350px;
   margin-left: 20px;
   margin-top: 10px;
@@ -227,11 +225,9 @@ header .menu img {
 summary {
   padding: 1rem;
   display: block;
-  /* background: #eee; */
   border-width: 0.1rem;
   border-style: solid;
   border-color: transparent transparent #ddd transparent;
-  /* padding-left: 2.2rem; */
   position: relative;
   cursor: pointer;
 }
@@ -239,21 +235,18 @@ summary {
 summary::before {
   content: '>';
   font-size: 29px;
-  border-width: .1rem;
+  border-width: 0.1rem;
   border-style: groove;
   border-color: transparent transparent transparent transparent;
   position: absolute;
   top: 1rem;
   left: 16rem;
   transform: rotate(0);
-  transform-origin: .2rem 50%;
-  transition: .25s transform ease;
-  /* display: flex;
-  position: relative;
-  padding: 15px; */
+  transform-origin: 0.2rem 50%;
+  transition: 0.25s transform ease;
 }
 
-details[open] > summary:before {
+details[open] > summary::before {
   transform: rotate(90deg);
 }
 
@@ -265,18 +258,5 @@ details > ul {
 .tech ul {
   padding: 5px 20px;
   list-style-type: none;
-  margin-top: 0px;
-}
-
-.tech li {
-  border-radius: 4%;
-  color: #444;
-  margin: 0px 0px;
-  text-align: left;
-  justify-content: first baseline;
-  font-weight: 500;
-  font-size: 15px;
-  padding: 0px;
-  margin-bottom: 10px;
-  list-style-type: none;
+  margin-top: 1px;
 }
