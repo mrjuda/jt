@@ -12,6 +12,13 @@ body {
   margin-right: 20px;
 }
 
+/* RESET UL's PADDING */
+
+ul {
+	padding: 0;
+  list-style: none;
+}
+
 #bg-main {
   background: #fff url("../images/bg.png") no-repeat;
   width: 370px;
@@ -24,16 +31,6 @@ body {
   background: #fff;
   width: 370px;
   margin-bottom: 200px;
-}
-
-.card {
-  border-radius: 20px;
-  background: #fff;
-  width: 300px;
-  margin-top: 20px;
-  margin-bottom: 100px;
-  padding: 15px;
-  height: max-content;
 }
 
 .grid-container {
@@ -124,12 +121,6 @@ header .menu img {
   height: 25px;
 }
 
-.works {
-  display: grid;
-  padding-top: 110px;
-  padding-bottom: 110px;
-}
-
 .main h1,
 .main h2,
 .works h2,
@@ -140,48 +131,52 @@ header .menu img {
   line-height: 48px;
 }
 
-.works .categories {
-  padding-inline-start: 1px;
+.works {
+  display: grid;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.card {
   display: flex;
-  list-style: none;
-  font-weight: 600;
+  flex-direction: column;
+  border-radius: 20px;
+  background: #fff;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  padding: 15px;
 }
 
-.works .categories li .canopy {
-  color: #333;
-}
-
-.tech li {
-  border-radius: 4%;
-  color: #444;
-  text-align: left;
-  font-weight: 500;
-  font-size: 15px;
-  margin-bottom: 10px;
-  list-style-type: none;
-}
-
-.works .categories li {
-  list-style: none;
+#categories {
+  display: flex;
   color: #777;
   font-size: 13px;
-  padding-right: 5px;
-  text-align: center;
+  font-weight: 600;
+  list-style: none;
+  list-style: none;
   cursor: pointer;
 }
 
-.works .keyword {
-  padding-inline-start: 1px;
+#categories #canopy {
+  color: #333;
+}
+
+#categories li {
+  padding-right: 5px;
+}
+
+.keyword {
   list-style: none;
   display: flex;
   justify-content: flex-start;
+  gap: 10px;
 }
 
-.works .keyword li {
+.keyword li {
   background-color: #ebebff;
-  border-radius: 15%;
+  border-radius: 10%;
   color: #6070ff;
-  margin: 1px 5px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
@@ -192,28 +187,26 @@ header .menu img {
   cursor: pointer;
 }
 
-.works .keyword li:hover {
+.keyword li:hover {
   background-color: #6070ff;
   color: #fff;
 }
 
-.cta-button {
+#cta-button {
   color: #396df2;
   border: 1px solid #6070ff;
-  box-sizing: border-box;
+  width: max-content;
   border-radius: 8px;
+  align-self: left;
+  text-align: center;
   padding: 12px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 400;
-  align-self: center;
-  text-align: left;
-  display: inline-block;
-  margin: 5px 2px;
   cursor: pointer;
 }
 
-.cta-button:hover {
+#cta-button:hover {
   background-color: #396df2;
   color: #fff;
 }
@@ -222,7 +215,6 @@ header .menu img {
   border-radius: 1px 100px 1px 1px;
   width: 350px;
   margin-left: 20px;
-  margin-top: 10px;
   margin-bottom: 100px;
 }
 
@@ -268,7 +260,15 @@ details > ul {
 }
 
 .tech ul {
-  padding: 5px 20px;
   list-style-type: none;
-  margin-top: 1px;
+  margin-top: 5px;
+  padding: 5px 20px;
+}
+
+.tech li {
+  border-radius: 4%;
+  color: #444;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 5px;
 }
