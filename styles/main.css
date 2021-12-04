@@ -190,6 +190,11 @@ header .menu img {
   cursor: pointer;
 }
 
+.works .keyword li:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
 .cta-button {
   color: #396df2;
   border: 1px solid #6070ff;
@@ -204,6 +209,11 @@ header .menu img {
   display: inline-block;
   margin: 5px 2px;
   cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #396df2;
+  color: #fff;
 }
 
 .tech {
