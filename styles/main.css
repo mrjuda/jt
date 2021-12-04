@@ -41,7 +41,7 @@ body {
   display: grid;
   grid-template-areas:
   
-  'header'
+    'header'
     'main'
     'works'
     'about';
@@ -100,7 +100,7 @@ header .menu img {
 
 .socials {
   color: rgb(131, 131, 255);
-  font-family: poppins, Arial, Helvetica, sans-serif;;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   margin-left: 20px;
   padding-bottom: 80px;
