@@ -51,6 +51,7 @@ ul {
 header {
   background-color: #fff;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-content: center;
   padding: 20px 20px;
@@ -64,6 +65,12 @@ header a {
   font-size: 18px;
   line-height: 20px;
   text-decoration: none;
+}
+
+header a:hover {
+  background-color: #f4f4ff;
+  border-radius: 5px;
+  color: #394dfd;
 }
 
 header .logo {
@@ -125,12 +132,14 @@ header .menu img {
   color: #172b4d;
   font-size: 40px;
   line-height: 48px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .works {
   display: grid;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .card {
@@ -140,12 +149,14 @@ header .menu img {
   background: #fff;
   width: 300px;
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   padding: 15px;
 }
 
 .categories {
   display: flex;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
   color: #777;
   font-size: 13px;
   font-weight: 600;
