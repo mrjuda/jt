@@ -101,7 +101,6 @@ header .menu img {
 
 .socials {
   color: rgb(131, 131, 255);
-  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   margin-left: 20px;
   padding-bottom: 80px;
@@ -168,7 +167,6 @@ header .menu img {
 }
 
 .keyword {
-  list-style: none;
   display: flex;
   justify-content: flex-start;
   gap: 10px;
@@ -211,7 +209,6 @@ details > ul {
 }
 
 .tech ul {
-  list-style-type: none;
   margin-top: 5px;
   padding: 5px 20px;
 }
