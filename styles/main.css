@@ -17,9 +17,17 @@ ul {
   list-style: none;
 }
 
+#bg-main,
+#bg-about {
+  width: 320px;
+}
+
+.header {
+  width: 290px;
+}
+
 #bg-main {
   background: #fff url("../images/bg.png") no-repeat;
-  width: 370px;
   margin-bottom: 100px;
   border-radius: 1px 1px 1px 100px;
 }
@@ -27,13 +35,14 @@ ul {
 #bg-about {
   border-radius: 1px 100px 1px 1px;
   background: #fff;
-  width: 370px;
   margin-bottom: 200px;
 }
 
 .grid-container {
   background-color: rgb(243, 243, 243);
   display: grid;
+  width: 320px;
+  margin: 10px 10px;
   grid-template-areas:
     'header'
     'main'
@@ -51,12 +60,8 @@ ul {
 header {
   background-color: #fff;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-content: center;
-  padding: 20px 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 20px;
 }
 
 header a {
@@ -146,7 +151,7 @@ header .menu img {
   flex-direction: column;
   border-radius: 20px;
   background: #fff;
-  width: 300px;
+  width: 260px;
   margin-top: 20px;
   margin-bottom: 40px;
   padding: 15px;
@@ -233,7 +238,6 @@ details > ul {
 
 .tech {
   border-radius: 1px 100px 1px 1px;
-  width: 350px;
   margin-left: 20px;
   margin-bottom: 100px;
 }
