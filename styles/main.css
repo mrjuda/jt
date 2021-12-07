@@ -32,7 +32,7 @@ ul {
 #bg-about {
   border-radius: 1px 100px 1px 1px;
   background: #fff;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 
 #bg-contact {
@@ -319,9 +319,8 @@ details[open] > summary::before {
 
 .form {
   color: #ebebff;
-  /* font-weight: 500; */
   margin-left: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .form p {
@@ -347,7 +346,6 @@ details[open] > summary::before {
   border-radius: 8px;
   text-align: center;
   margin: 10px 0;
-  /* padding: 12px 12px; */
   font-size: 17px;
   line-height: 24px;
   font-weight: 400;
