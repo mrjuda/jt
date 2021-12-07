@@ -103,6 +103,14 @@ header .menu img {
   margin-bottom: 10px;
 }
 
+form p {
+  color: #ebebff;
+  text-align: left;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
 .main p,
 .works p,
 .about p {
@@ -221,6 +229,19 @@ details > ul {
   padding: 5px 20px;
 }
 
+.cta-button {
+  color: #396df2;
+  border: 1px solid #6070ff;
+  width: max-content;
+  border-radius: 8px;
+  text-align: center;
+  padding: 12px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
 form .cta-button {
   text-decoration: none;
   color: #396df2;
@@ -229,19 +250,6 @@ form .cta-button {
   border-radius: 8px;
   text-align: center;
   padding: 10px 15px;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-.cta-button {
-  color: #396df2;
-  border: 1px solid #6070ff;
-  width: max-content;
-  border-radius: 8px;
-  text-align: center;
-  padding: 12px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 400;
@@ -328,14 +336,6 @@ details[open] > summary::before {
   margin-right: 20px;
 }
 
-form p {
-  color: #ebebff;
-  text-align: left;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 400;
-}
-
 .contact p {
   color: #ebebff;
   text-align: center;
@@ -363,7 +363,6 @@ form textarea {
   height: 120px;
   padding: 8px 3px;
 }
-
 
 form .cta-button:hover {
   background: #396df2;
