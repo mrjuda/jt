@@ -6,7 +6,9 @@ body {
 }
 
 .main .content,
-.about .content {
+.about .content,
+.contact .content {
+  width: 280px;
   margin-top: 100px;
   margin-left: 20px;
   margin-right: 20px;
@@ -15,11 +17,6 @@ body {
 ul {
   padding: 0;
   list-style: none;
-}
-
-#bg-main,
-#bg-about {
-  width: 320px;
 }
 
 .header {
@@ -38,6 +35,12 @@ ul {
   margin-bottom: 200px;
 }
 
+#bg-contact {
+  border-radius: 100px 1px 1px 1px;
+  background: #6070ff url("../images/bg-contact.png") no-repeat;
+  margin-bottom: 200px;
+}
+
 .grid-container {
   background-color: rgb(243, 243, 243);
   display: grid;
@@ -51,8 +54,7 @@ ul {
 }
 
 .header,
-.works,
-.contact {
+.works {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -94,14 +96,35 @@ header .menu img {
   height: 20px;
 }
 
+.main h1,
+.main h2,
+.works h2,
+.about h2 {
+  color: #172b4d;
+}
+
+.main h1,
+.main h2,
+.works h2,
+.about h2 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
 .main p,
 .works p,
-.about p,
-.contact p {
+.about p {
+  color: #344563;
+}
+
+.main p,
+.works p,
+.about p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #344563;
 }
 
 .socials {
@@ -126,18 +149,6 @@ header .menu img {
 
 .socials .icon-bar img {
   height: 25px;
-}
-
-.main h1,
-.main h2,
-.works h2,
-.about h2,
-.contact h2 {
-  color: #172b4d;
-  font-size: 40px;
-  line-height: 48px;
-  margin-top: 15px;
-  margin-bottom: 10px;
 }
 
 .works {
@@ -282,4 +293,68 @@ summary::before {
 
 details[open] > summary::before {
   transform: rotate(90deg);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  line-height: 48px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  color: #ebebff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.form {
+  color: #ebebff;
+  /* font-weight: 500; */
+  margin-left: 20px;
+  padding-bottom: 80px;
+}
+
+.form p {
+  color: #ebebff;
+  text-align: left;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.contact h4 {
+  height: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.form .cta-button {
+  color: #396df2;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  width: max-content;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px 0;
+  /* padding: 12px 12px; */
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.form .cta-button:hover {
+  background: #396df2;
+  color: #fff;
 }
