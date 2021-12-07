@@ -356,12 +356,14 @@ form textarea {
   border-radius: 5px;
   height: 30px;
   width: 275px;
+  padding-left: 15px;
 }
 
 form textarea {
   resize: none;
   height: 120px;
   padding: 8px 3px;
+  padding-left: 15px;
 }
 
 form .cta-button:hover {
