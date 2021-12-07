@@ -275,3 +275,118 @@ summary::before {
 details[open] > summary::before {
   transform: rotate(90deg);
 }
+
+
+
+/* CONTACT FORM STARTS HERE */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#bg-contact {
+  width: 320px;
+  background: #fff url("../images/bg-contact.png") no-repeat;
+  background-size: cover;
+}
+
+.contact h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.contact h4 {
+  height: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.contact .content {
+  width: 280px;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contact p {
+  color: #ebebff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+form {
+  color: #ebebff;
+  margin-left: 20px;
+}
+
+form p {
+  color: #ebebff;
+  text-align: left;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+form li {
+  margin: 10px 0;
+}
+
+form input,
+form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 275px;
+}
+
+form textarea {
+  resize: none;
+  height: 120px;
+  padding: 8px 3px;
+}
+
+form .cta-button {
+  color: #396df2;
+  background: #fff;
+  border: 1px solid #396df2;
+  width: max-content;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+form .cta-button a {
+  text-decoration: none;
+}
+
+form .cta-button a:hover {
+  background: #396df2;
+  color: #fff;
+}
+
+form .cta-button:hover {
+  background: #396df2;
+  color: #fff;
+}
+
+.contact .black-dash {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  margin: 15px 100px;
+  text-align: center;
+}
+
