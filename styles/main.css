@@ -5,8 +5,21 @@ body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
+.grid-container {
+  background-color: rgb(243, 243, 243);
+  display: grid;
+  width: 320px;
+  margin: 10px 10px;
+  grid-template-areas:
+    'header'
+    'main'
+    'works'
+    'about';
+}
+
 .main .content,
 .about .content {
+  width: 280px;
   margin-top: 100px;
   margin-left: 20px;
   margin-right: 20px;
@@ -15,11 +28,6 @@ body {
 ul {
   padding: 0;
   list-style: none;
-}
-
-#bg-main,
-#bg-about {
-  width: 320px;
 }
 
 .header {
@@ -35,24 +43,10 @@ ul {
 #bg-about {
   border-radius: 1px 100px 1px 1px;
   background: #fff;
-  margin-bottom: 200px;
-}
-
-.grid-container {
-  background-color: rgb(243, 243, 243);
-  display: grid;
-  width: 320px;
-  margin: 10px 10px;
-  grid-template-areas:
-    'header'
-    'main'
-    'works'
-    'about';
 }
 
 .header,
-.works,
-.contact {
+.works {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -82,6 +76,10 @@ header .logo {
   align-content: center;
 }
 
+.tech img {
+  width: 270px;
+}
+
 header .logo img {
   height: 20px;
 }
@@ -94,14 +92,24 @@ header .menu img {
   height: 20px;
 }
 
+.main h1,
+.main h2,
+.works h2,
+.about h2 {
+  color: #172b4d;
+  font-size: 40px;
+  line-height: 48px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
 .main p,
 .works p,
-.about p,
-.contact p {
+.about p {
+  color: #344563;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #344563;
 }
 
 .socials {
@@ -126,18 +134,6 @@ header .menu img {
 
 .socials .icon-bar img {
   height: 25px;
-}
-
-.main h1,
-.main h2,
-.works h2,
-.about h2,
-.contact h2 {
-  color: #172b4d;
-  font-size: 40px;
-  line-height: 48px;
-  margin-top: 15px;
-  margin-bottom: 10px;
 }
 
 .works {
@@ -242,10 +238,6 @@ details > ul {
 .tech {
   border-radius: 1px 100px 1px 1px;
   margin-bottom: 100px;
-}
-
-.tech img {
-  width: 270px;
 }
 
 .tech details {
