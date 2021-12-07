@@ -32,7 +32,6 @@ ul {
 #bg-about {
   border-radius: 1px 100px 1px 1px;
   background: #fff;
-  /* margin-bottom: 200px; */
 }
 
 #bg-contact {
@@ -84,6 +83,10 @@ header .logo {
   align-content: center;
 }
 
+.tech img {
+  width: 270px;
+}
+
 header .logo img {
   height: 20px;
 }
@@ -101,12 +104,6 @@ header .menu img {
 .works h2,
 .about h2 {
   color: #172b4d;
-}
-
-.main h1,
-.main h2,
-.works h2,
-.about h2 {
   font-size: 40px;
   line-height: 48px;
   margin-top: 15px;
@@ -117,11 +114,6 @@ header .menu img {
 .works p,
 .about p {
   color: #344563;
-}
-
-.main p,
-.works p,
-.about p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -255,10 +247,6 @@ details > ul {
   margin-bottom: 100px;
 }
 
-.tech img {
-  width: 270px;
-}
-
 .tech details {
   display: flex;
   align-items: center;
@@ -340,8 +328,8 @@ details[open] > summary::before {
 
 .form .cta-button {
   color: #396df2;
-  background: #ffffff;
-  border: 1px solid #ffffff;
+  background: #fff;
+  border: 1px solid #fff;
   width: max-content;
   border-radius: 8px;
   text-align: center;
