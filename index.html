@@ -222,15 +222,27 @@
            I’d love to help with it 
         </p>
       </div>
-      <div class="form">
-        <h4>CONTACT FORM:</h4>
-        <!-- <h4>Insert contact form here</h4> -->
-        <p>NAME:</p>
-        <p>EMAIL:</p>
-        <p>Message: </p>
-        <div class="cta-button">Get in touch</div>
-      </div>
-
+      <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <!-- <label for="name"></label> -->
+            <input type="text" id="name" name="user_name" placeholder=" Your Name">
+          </li>
+          <li>
+            <!-- <label for="email">E-mail:</label> -->
+            <input type="email" id="mail" name="user_name" placeholder=" YourEmail@mail.com">
+          </li>
+          <li>
+            <!-- <label for="msg">Message:</label> -->
+            <textarea id="msg" name="user_message" placeholder=" Write your message here"></textarea>
+          </li>
+          <li>
+            <button type="submit" class="cta-button">
+              Get in touch
+            </button>
+          </li>
+        </ul>
+      </form>
     </section> <!-- End of CONTACT -->
     
   </div> <!-- End of grid-container -->
