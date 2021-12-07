@@ -241,8 +241,11 @@ details > ul {
 
 .tech {
   border-radius: 1px 100px 1px 1px;
-  margin-left: 20px;
   margin-bottom: 100px;
+}
+
+.tech img {
+  width: 270px;
 }
 
 .tech details {
