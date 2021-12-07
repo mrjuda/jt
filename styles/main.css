@@ -142,6 +142,8 @@ header .menu img {
 
 .works {
   display: grid;
+  width: 290px;
+  padding: 15px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -149,6 +151,7 @@ header .menu img {
 .card {
   display: flex;
   flex-direction: column;
+  flex-basis: content;
   border-radius: 20px;
   background: #fff;
   width: 260px;
