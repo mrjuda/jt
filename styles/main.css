@@ -276,10 +276,6 @@ details[open] > summary::before {
   transform: rotate(90deg);
 }
 
-
-
-/* CONTACT FORM STARTS HERE */
-
 .contact {
   display: flex;
   flex-direction: column;
@@ -355,8 +351,6 @@ form textarea {
 }
 
 form .cta-button {
-  color: #396df2;
-  background: #fff;
   border: 1px solid #396df2;
   width: max-content;
   border-radius: 8px;
@@ -368,18 +362,15 @@ form .cta-button {
   cursor: pointer;
 }
 
-form .cta-button a {
+form .cta-button > a {
   text-decoration: none;
+  color: #396df2;
 }
 
-form .cta-button a:hover {
+form .cta-button:hover > a {
   background: #396df2;
   color: #fff;
-}
-
-form .cta-button:hover {
-  background: #396df2;
-  color: #fff;
+  text-decoration: none;
 }
 
 .contact .black-dash {
@@ -389,4 +380,3 @@ form .cta-button:hover {
   margin: 15px 100px;
   text-align: center;
 }
-
