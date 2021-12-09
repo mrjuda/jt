@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: lightgray;
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -8,7 +12,7 @@ body {
 .grid-container {
   background-color: rgb(243, 243, 243);
   display: grid;
-  width: 320px;
+  /* width: 320px; */
   margin: 10px 10px;
   grid-template-areas:
     'header'
@@ -19,7 +23,7 @@ body {
 
 .main .content,
 .about .content {
-  width: 280px;
+  /* width: 280px; */
   margin-top: 100px;
   margin-left: 20px;
   margin-right: 20px;
@@ -31,11 +35,12 @@ ul {
 }
 
 .header {
-  width: 290px;
+  /* width: 290px; */
 }
 
 #bg-main {
   background: #fff url("../images/bg.png") no-repeat;
+  background-size: cover;
   margin-bottom: 100px;
   border-radius: 1px 1px 1px 100px;
 }
@@ -47,8 +52,8 @@ ul {
 
 .header,
 .works {
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
 }
 
 header {
@@ -72,24 +77,22 @@ header a:hover {
   color: #394dfd;
 }
 
-header .logo {
-  align-content: center;
+header .logo,
+header .name {
+  /* justify-content: center; */
+  /* align-content: center; */
 }
 
 .tech img {
   width: 270px;
 }
 
-header .logo img {
-  height: 20px;
+header img {
+  height: 25px;
 }
 
 header .logo a {
-  font-size: 20px;
-}
-
-header .menu img {
-  height: 20px;
+  /* font-size: 20px; */
 }
 
 .main h1,
@@ -146,7 +149,7 @@ form p {
 
 .works {
   display: grid;
-  width: 290px;
+  /* width: 290px; */
   padding: 15px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -158,7 +161,7 @@ form p {
   flex-basis: content;
   border-radius: 20px;
   background: #fff;
-  width: 260px;
+  /* width: 260px; */
   margin-top: 20px;
   margin-bottom: 40px;
   padding: 15px;
@@ -184,8 +187,15 @@ form p {
   gap: 10px;
 }
 
+form ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 form li {
-  margin: 10px 0;
+  margin: 5px 0;
+  justify-content: center;
 }
 
 .keyword li {
@@ -243,6 +253,7 @@ details > ul {
 }
 
 form .cta-button {
+  /* align-items: center; */
   text-decoration: none;
   color: #396df2;
   border: 1px solid #396df2;
@@ -292,7 +303,7 @@ summary::before {
   border-color: transparent transparent transparent transparent;
   position: absolute;
   top: 1rem;
-  left: 16rem;
+  left: 90%;
   transform: rotate(0);
   transform-origin: 0.2rem 50%;
   transition: 0.25s transform ease;
@@ -305,12 +316,27 @@ details[open] > summary::before {
 .contact {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 #bg-contact {
-  width: 320px;
+  /* width: 320px; */
   background: #fff url("../images/bg-contact.png") no-repeat;
   background-size: cover;
+  /* justify-content: center; */
+}
+
+.contact .content {
+  width: 70%;
+  /* margin: 0 20%; */
+  justify-content: center;
+}
+
+.contact form {
+  width: 60%;
+  /* margin: 0 20%; */
+  justify-content: center;
 }
 
 .contact h2 {
@@ -330,7 +356,7 @@ details[open] > summary::before {
 }
 
 .contact .content {
-  width: 280px;
+  /* width: 280px; */
   margin-top: 100px;
   margin-left: 20px;
   margin-right: 20px;
@@ -355,7 +381,7 @@ form textarea {
   border-style: none;
   border-radius: 5px;
   height: 30px;
-  width: 275px;
+  width: calc(100% - 20px);
   padding-left: 15px;
 }
 
@@ -376,6 +402,6 @@ form .cta-button:hover {
   border-style: solid;
   border-width: 2px;
   border-radius: 5px;
-  margin: 15px 100px;
+  margin: 15px 30%;
   text-align: center;
 }
