@@ -12,8 +12,7 @@ body {
 .grid-container {
   background-color: rgb(243, 243, 243);
   display: grid;
-  /* width: 320px; */
-  margin: 10px 10px;
+  margin: 2% 2%;
   grid-template-areas:
     'header'
     'main'
@@ -21,21 +20,22 @@ body {
     'about';
 }
 
+.main-elements,
+.about-elements,
+.card {
+  padding: 10%;
+}
+
 .main .content,
 .about .content {
-  /* width: 280px; */
   margin-top: 100px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
 }
 
 ul {
   padding: 0;
   list-style: none;
-}
-
-.header {
-  /* width: 290px; */
 }
 
 #bg-main {
@@ -48,12 +48,6 @@ ul {
 #bg-about {
   border-radius: 1px 100px 1px 1px;
   background: #fff;
-}
-
-.header,
-.works {
-  /* padding-left: 20px;
-  padding-right: 20px; */
 }
 
 header {
@@ -77,22 +71,12 @@ header a:hover {
   color: #394dfd;
 }
 
-header .logo,
-header .name {
-  /* justify-content: center; */
-  /* align-content: center; */
-}
-
-.tech img {
-  width: 270px;
+.about2 img {
+  width: 100%;
 }
 
 header img {
   height: 25px;
-}
-
-header .logo a {
-  /* font-size: 20px; */
 }
 
 .main h1,
@@ -126,7 +110,7 @@ form p {
 .socials {
   color: rgb(131, 131, 255);
   font-weight: 500;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   padding-bottom: 80px;
 }
 
@@ -149,7 +133,6 @@ form p {
 
 .works {
   display: grid;
-  /* width: 290px; */
   padding: 15px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -161,10 +144,13 @@ form p {
   flex-basis: content;
   border-radius: 20px;
   background: #fff;
-  /* width: 260px; */
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 40px;
-  padding: 15px;
+}
+
+.works .card img {
+  width: 100%;
 }
 
 .categories {
@@ -190,12 +176,14 @@ form p {
 form ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 form li {
   margin: 5px 0;
-  justify-content: center;
+}
+
+ul {
+  width: auto;
 }
 
 .keyword li {
@@ -216,12 +204,11 @@ form li {
   padding-right: 5px;
 }
 
-.tech li {
+.about2 li {
   border-radius: 4%;
   color: #444;
   font-weight: 500;
   font-size: 15px;
-  padding: 5px;
 }
 
 .keyword li:hover {
@@ -234,7 +221,7 @@ details > ul {
   margin-bottom: 0;
 }
 
-.tech ul {
+.about2 ul {
   margin-top: 5px;
   padding: 5px 20px;
 }
@@ -253,7 +240,6 @@ details > ul {
 }
 
 form .cta-button {
-  /* align-items: center; */
   text-decoration: none;
   color: #396df2;
   border: 1px solid #396df2;
@@ -272,12 +258,12 @@ form .cta-button {
   color: #fff;
 }
 
-.tech {
+.about2 {
   border-radius: 1px 100px 1px 1px;
   margin-bottom: 100px;
 }
 
-.tech details {
+.about2 details {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -316,26 +302,21 @@ details[open] > summary::before {
 .contact {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
 #bg-contact {
-  /* width: 320px; */
   background: #fff url("../images/bg-contact.png") no-repeat;
   background-size: cover;
-  /* justify-content: center; */
 }
 
 .contact .content {
   width: 70%;
-  /* margin: 0 20%; */
   justify-content: center;
 }
 
 .contact form {
-  width: 60%;
-  /* margin: 0 20%; */
+  width: 80%;
   justify-content: center;
 }
 
@@ -356,7 +337,6 @@ details[open] > summary::before {
 }
 
 .contact .content {
-  /* width: 280px; */
   margin-top: 100px;
   margin-left: 20px;
   margin-right: 20px;
@@ -381,8 +361,22 @@ form textarea {
   border-style: none;
   border-radius: 5px;
   height: 30px;
-  width: calc(100% - 20px);
   padding-left: 15px;
+}
+
+#contact-form {
+  justify-content: center;
+}
+
+form > ul > li > input,
+form > ul > li > textarea {
+  width: 80%;
+  justify-content: center;
+  align-self: center;
+}
+
+form > ul {
+  text-align: center;
 }
 
 form textarea {
