@@ -80,7 +80,7 @@ header a {
 header a:hover {
   border-radius: 2px;
   color: #394dfd;
-  font-size: 22px;  
+  font-size: 22px;
 }
 
 header img {
@@ -96,6 +96,7 @@ header img {
     margin-left: 100%;
     width: 300%;
   }
+
   to {
     margin-left: 0%;
     width: 100%;
@@ -122,6 +123,7 @@ header img {
     margin-left: 100%;
     width: 300%;
   }
+
   to {
     margin-left: 0%;
     width: 100%;
