@@ -479,6 +479,39 @@ form .cta-button:hover {
     margin-bottom: 10px;
   }
 
+  .card {
+    display: flex;
+    padding: 1% 2%;
+  }
+
+  .card-img,
+  .card-text {
+    padding: 4% 1%;
+    margin: 0 0;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  #card1 {
+    flex-direction: row;
+  }
+
+  #card2 {
+    flex-direction: row-reverse;
+  }
+
+  #card3 {
+    flex-direction: row;
+  }
+
+  #card4 {
+    flex-direction: row-reverse;
+  }
+
+  
+
   .about {
     /* margin-top: 0;
     margin-bottom: 0; */
