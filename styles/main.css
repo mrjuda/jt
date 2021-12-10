@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: lightgray;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  margin: 0 0;
+  padding: 0 0;
 }
 
 .grid-container {
   background-color: rgb(243, 243, 243);
   display: grid;
-  width: 320px;
-  margin: 10px 10px;
   grid-template-areas:
     'header'
     'main'
@@ -17,12 +21,13 @@ body {
     'about';
 }
 
-.main .content,
-.about .content {
-  width: 280px;
-  margin-top: 100px;
-  margin-left: 20px;
-  margin-right: 20px;
+.main-elements {
+  padding: 20% 10%;
+}
+
+.about-elements,
+.contact {
+  padding: 5% 10%;
 }
 
 ul {
@@ -30,32 +35,37 @@ ul {
   list-style: none;
 }
 
-.header {
-  width: 290px;
-}
-
-#bg-main {
-  background: #fff url("../images/bg.png") no-repeat;
-  margin-bottom: 100px;
-  border-radius: 1px 1px 1px 100px;
-}
-
-#bg-about {
-  border-radius: 1px 100px 1px 1px;
-  background: #fff;
-}
-
-.header,
-.works {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 header {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
+}
+
+.menu-desktop {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+.main {
+  background: #fff url("../images/bg-main-mobile.png") no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+  border-radius: 1px 1px 1px 100px;
+}
+
+.about {
+  border-radius: 1px 100px 1px 1px;
+  background: #fff;
+  padding-bottom: 100px;
+}
+
+.main,
+.works {
+  margin-bottom: 50px;
 }
 
 header a {
@@ -72,24 +82,8 @@ header a:hover {
   color: #394dfd;
 }
 
-header .logo {
-  align-content: center;
-}
-
-.tech img {
-  width: 270px;
-}
-
-header .logo img {
-  height: 20px;
-}
-
-header .logo a {
-  font-size: 20px;
-}
-
-header .menu img {
-  height: 20px;
+header img {
+  height: 25px;
 }
 
 .main h1,
@@ -123,8 +117,7 @@ form p {
 .socials {
   color: rgb(131, 131, 255);
   font-weight: 500;
-  margin-left: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 .socials h4 {
@@ -140,13 +133,26 @@ form p {
   gap: 15px;
 }
 
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.img-container img {
+  width: 20%;
+  padding: 0 0;
+  margin: 0 0;
+  border-radius: 50%;
+}
+
 .socials .icon-bar img {
   height: 25px;
 }
 
 .works {
   display: grid;
-  width: 290px;
   padding: 15px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -158,10 +164,14 @@ form p {
   flex-basis: content;
   border-radius: 20px;
   background: #fff;
-  width: 260px;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 40px;
-  padding: 15px;
+  padding: 8% 8%;
+}
+
+.works .card img {
+  width: 100%;
 }
 
 .categories {
@@ -184,8 +194,13 @@ form p {
   gap: 10px;
 }
 
+form ul {
+  display: flex;
+  flex-direction: column;
+}
+
 form li {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .keyword li {
@@ -206,12 +221,12 @@ form li {
   padding-right: 5px;
 }
 
-.tech li {
+.about2 li {
   border-radius: 4%;
   color: #444;
   font-weight: 500;
   font-size: 15px;
-  padding: 5px;
+  margin: 1% 4%;
 }
 
 .keyword li:hover {
@@ -224,9 +239,16 @@ details > ul {
   margin-bottom: 0;
 }
 
-.tech ul {
+.about2 ul {
   margin-top: 5px;
-  padding: 5px 20px;
+  margin-bottom: 15px;
+  padding: 1% 1%;
+}
+
+.about-elements {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
 }
 
 .cta-button {
@@ -261,12 +283,16 @@ form .cta-button {
   color: #fff;
 }
 
-.tech {
-  border-radius: 1px 100px 1px 1px;
-  margin-bottom: 100px;
+.about1 {
+  margin: 2%;
 }
 
-.tech details {
+.about2 {
+  border-radius: 1px 100px 1px 1px;
+  margin: 2%;
+}
+
+.about2 details {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -292,7 +318,7 @@ summary::before {
   border-color: transparent transparent transparent transparent;
   position: absolute;
   top: 1rem;
-  left: 16rem;
+  left: 90%;
   transform: rotate(0);
   transform-origin: 0.2rem 50%;
   transition: 0.25s transform ease;
@@ -302,15 +328,46 @@ details[open] > summary::before {
   transform: rotate(90deg);
 }
 
+.languages {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.languages .img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1% 5%;
+  background: #f7f7f9;
+  border-radius: 10px;
+}
+
+.img-container h4 {
+  padding: 1% 5%;
+  font-weight: 500;
+  font-size: 100%;
+  line-height: 20px;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background: #fff url("../images/bg-contact-mobile.png") no-repeat;
+  background-size: cover;
 }
 
-#bg-contact {
-  width: 320px;
-  background: #fff url("../images/bg-contact.png") no-repeat;
-  background-size: cover;
+.contact .content {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.contact form {
+  justify-content: center;
+  color: #ebebff;
+  width: 100%;
 }
 
 .contact h2 {
@@ -329,13 +386,6 @@ details[open] > summary::before {
   margin-bottom: 0;
 }
 
-.contact .content {
-  width: 280px;
-  margin-top: 100px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .contact p {
   color: #ebebff;
   text-align: center;
@@ -344,18 +394,12 @@ details[open] > summary::before {
   font-weight: 400;
 }
 
-form {
-  color: #ebebff;
-  margin-left: 20px;
-}
-
 form input,
 form textarea {
   font-family: Arial, Helvetica, sans-serif;
   border-style: none;
   border-radius: 5px;
   height: 30px;
-  width: 275px;
   padding-left: 15px;
 }
 
@@ -364,6 +408,11 @@ form textarea {
   height: 120px;
   padding: 8px 3px;
   padding-left: 15px;
+}
+
+form > ul > li > input,
+form > ul > li > textarea {
+  width: 100%;
 }
 
 form .cta-button:hover {
@@ -376,6 +425,172 @@ form .cta-button:hover {
   border-style: solid;
   border-width: 2px;
   border-radius: 5px;
-  margin: 15px 100px;
+  margin: 30px 30%;
+  margin-bottom: 0;
   text-align: center;
+}
+
+/* ##### DESKTOP DESIGN ##### */
+
+@media screen and (min-width: 992px) {
+  header {
+    padding: 3% 10%;
+  }
+
+  header .logo {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu-desktop a {
+    color: #344563;
+    justify-content: space-between;
+    padding: 10px 12px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .main {
+    background: #fff url("../images/bg-main-desktop.png") no-repeat;
+    background-size: 100%;
+  }
+
+  .main-elements {
+    padding: 8% 25%;
+  }
+
+  .main-elements .content h1,
+  .main > h2,
+  .works > h2,
+  .about > h2 {
+    color: #172b4d;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    display: flex;
+    padding: 1% 2%;
+  }
+
+  .card-img,
+  .card-text {
+    padding: 4% 1%;
+    margin: 0 0;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  #card1 {
+    flex-direction: row;
+  }
+
+  #card2 {
+    flex-direction: row-reverse;
+  }
+
+  #card3 {
+    flex-direction: row;
+  }
+
+  #card4 {
+    flex-direction: row-reverse;
+  }
+
+  .about {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .about-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .about1 {
+    flex: 40%;
+  }
+
+  .about2 {
+    flex-direction: column;
+    flex: 45%;
+  }
+
+  .about2 ul {
+    padding-left: 0;
+  }
+
+  .about2 li {
+    margin: 1%;
+  }
+
+  .languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .languages .img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    width: 100px;
+    align-items: flex-start;
+    padding: 5% 5%;
+    background: #f7f7f9;
+    border-radius: 10px;
+  }
+
+  .img-container img {
+    width: 48px;
+    height: auto;
+    padding: 5% 5%;
+    margin: 0 0;
+    border-radius: 50%;
+  }
+
+  .img-container h4 {
+    padding: 1% 5%;
+    margin-top: 8%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .contact {
+    background: #6070ff url("../images/bg-contact-desktop.png") no-repeat;
+    background-size: 100%;
+    border-radius: 100px 1px 1px 1px;
+    padding: 2% 25%;
+    justify-content: center;
+  }
+
+  .contact li {
+    text-align: center;
+  }
+
+  .contact .black-dash {
+    display: none;
+  }
 }
