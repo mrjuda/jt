@@ -364,7 +364,7 @@ details[open] > summary::before {
 }
 
 .contact .content {
-  width: 90%;
+  width: 100%;
 }
 
 .contact form {
@@ -551,6 +551,10 @@ form .cta-button:hover {
     /* width: 50%; */
     padding: 2% 25%;
     justify-content: center;
+  }
+
+  .contact li {
+    text-align: center;
   }
 
   .contact .black-dash {
