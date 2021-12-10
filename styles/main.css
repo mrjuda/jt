@@ -29,10 +29,6 @@ body {
   padding: 5% 10%;
 }
 
-.card {
-  padding: 8% 8%;
-}
-
 ul {
   padding: 0;
   list-style: none;
@@ -150,10 +146,6 @@ form p {
   border-radius: 50%;
 }
 
-.img-container h4 {
-  size: 50%;
-}
-
 .socials .icon-bar img {
   height: 25px;
 }
@@ -174,6 +166,7 @@ form p {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 40px;
+  padding: 8% 8%;
 }
 
 .works .card img {
@@ -232,10 +225,7 @@ form li {
   color: #444;
   font-weight: 500;
   font-size: 15px;
-}
-
-.languages li {
-  margin: 10px;
+  margin: 1% 4%;
 }
 
 .keyword li:hover {
@@ -250,7 +240,7 @@ details > ul {
 
 .about2 ul {
   margin-top: 5px;
-  padding: 5px 20px;
+  padding: 1% 1%;
 }
 
 .about-elements {
@@ -297,12 +287,7 @@ form .cta-button {
 
 .about2 {
   border-radius: 1px 100px 1px 1px;
-  margin-bottom: 100px;
   margin: 2%;
-}
-
-.about2 ul {
-  padding: 0 0;
 }
 
 .about2 details {
@@ -446,7 +431,6 @@ form .cta-button:hover {
 /* DESKTOP DESIGN */
 
 @media screen and (min-width: 768px) {
-
   header {
     padding: 3% 10%;
   }
