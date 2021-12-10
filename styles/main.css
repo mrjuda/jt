@@ -45,6 +45,14 @@ header {
   padding: 10px 20px;
 }
 
+.menu-desktop {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
 .main {
   background: #fff url("../images/bg-main-mobile.png") no-repeat;
   background-size: cover;
@@ -456,7 +464,33 @@ form .cta-button:hover {
 
 /* DESKTOP DESIGN */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
+
+  header {
+    padding: 3% 10%;
+  }
+  header .logo {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu-desktop a {
+    color: #344563;
+    justify-content: space-between;
+    padding: 10px 12px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
 
   .main {
     background: #fff url("../images/bg-main-desktop.png") no-repeat;
@@ -533,13 +567,13 @@ form .cta-button:hover {
 
   .about1 {
     align-content: top;
-    flex: 35%
+    flex: 40%
     /* margin: 20px 20px; */
   }
 
   .about2 {
     flex-direction: column;
-    flex: 50%
+    flex: 45%
     /* margin: 20px 20px; */
   }
 
