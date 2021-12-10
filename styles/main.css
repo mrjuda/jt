@@ -20,17 +20,17 @@ body {
     'about';
 }
 
-.main-elements,
-.card,
-.about-elements {
-  padding: 8%;
+.main-elements {
+  padding: 20% 10%;
 }
 
-.main .content,
-.about .content {
-  /* margin-top: 100px; */
-  /* margin-left: 20px;
-  margin-right: 20px; */
+.about-elements,
+.contact {
+  padding: 5% 10%;
+}
+
+.card {
+  padding: 8% 8%;
 }
 
 ul {
@@ -38,23 +38,30 @@ ul {
   list-style: none;
 }
 
-#bg-main {
-  background: #fff url("../images/bg.png") no-repeat;
-  background-size: cover;
-  margin-bottom: 100px;
-  border-radius: 1px 1px 1px 100px;
-}
-
-#bg-about {
-  border-radius: 1px 100px 1px 1px;
-  background: #fff;
-}
-
 header {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
+}
+
+.main {
+  background: #fff url("../images/bg-main-mobile.png") no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+  border-radius: 1px 1px 1px 100px;
+}
+
+.about {
+  border-radius: 1px 100px 1px 1px;
+  background: #fff;
+  padding-bottom: 100px;
+}
+
+.main,
+.works,
+.contact {
+  margin-bottom: 50px;
 }
 
 header a {
@@ -107,7 +114,7 @@ form p {
   color: rgb(131, 131, 255);
   font-weight: 500;
   /* margin-left: 20px; */
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 .socials h4 {
@@ -244,6 +251,7 @@ form .cta-button {
   border: 1px solid #396df2;
   width: max-content;
   border-radius: 8px;
+  /* justify-content: left; */
   text-align: center;
   padding: 10px 15px;
   font-size: 17px;
@@ -265,6 +273,10 @@ form .cta-button {
   border-radius: 1px 100px 1px 1px;
   margin-bottom: 100px;
   margin: 2%;
+}
+
+.about2 ul {
+  padding: 0 0;
 }
 
 .about2 img {
@@ -348,21 +360,17 @@ details[open] > summary::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#bg-contact {
-  background: #fff url("../images/bg-contact.png") no-repeat;
+  background: #fff url("../images/bg-contact-mobile.png") no-repeat;
   background-size: cover;
 }
 
 .contact .content {
-  width: 70%;
-  justify-content: center;
+  width: 90%;
 }
 
 .contact form {
-  width: 80%;
-  justify-content: center;
+  width: 100%;
+  /* justify-content: center; */
 }
 
 .contact h2 {
@@ -383,8 +391,8 @@ details[open] > summary::before {
 
 .contact .content {
   margin-top: 100px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px; */
+  /* margin-right: 20px; */
 }
 
 .contact p {
@@ -395,8 +403,9 @@ details[open] > summary::before {
   font-weight: 400;
 }
 
-form {
+.contact form {
   color: #ebebff;
+  /* justify-content: left; */
   /* margin-left: 20px; */
 }
 
@@ -409,19 +418,19 @@ form textarea {
   padding-left: 15px;
 }
 
-#contact-form {
+.contact form {
+  /* padding: 0 7%; */
   justify-content: center;
 }
 
 form > ul > li > input,
 form > ul > li > textarea {
-  width: 80%;
-  justify-content: center;
-  align-self: center;
+  width: 100%;
 }
 
 form > ul {
-  text-align: center;
+  /* width: 100%; */
+  /* text-align: left; */
 }
 
 form textarea {
@@ -448,6 +457,28 @@ form .cta-button:hover {
 /* DESKTOP DESIGN */
 
 @media screen and (min-width: 800px) {
+
+  .main {
+    background: #fff url("../images/bg-main-desktop.png") no-repeat;
+    background-size: 100%;
+  }
+
+  .main-elements {
+    padding: 8% 25%;
+  }
+
+  .main-elements .content h1,
+  .main > h2,
+  .works > h2,
+  .about > h2 {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
   .about-elements {
     display: flex;
     flex-direction: row;
