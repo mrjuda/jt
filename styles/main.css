@@ -136,6 +136,24 @@ form p {
   gap: 15px;
 }
 
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.img-container img {
+  width: 20%;
+  padding: 0 0;
+  margin: 0 0;
+  border-radius: 50%;
+}
+
+.img-container h4 {
+  size: 50%;
+}
+
 .socials .icon-bar img {
   height: 25px;
 }
@@ -216,6 +234,10 @@ form li {
   font-size: 15px;
 }
 
+.languages li {
+  margin: 10px;
+}
+
 .keyword li:hover {
   background-color: #6070ff;
   color: #fff;
@@ -283,10 +305,6 @@ form .cta-button {
   padding: 0 0;
 }
 
-.about2 img {
-  width: 100%;
-}
-
 .about2 details {
   display: flex;
   align-items: center;
@@ -324,15 +342,9 @@ details[open] > summary::before {
 }
 
 .languages {
-  width: 200px;
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 50px;
-}
-
-.languages li {
-  margin: 10px;
 }
 
 .languages .img-container {
@@ -343,14 +355,6 @@ details[open] > summary::before {
   padding: 1% 5%;
   background: #f7f7f9;
   border-radius: 10px;
-}
-
-.img-container img {
-  height: auto;
-  width: 18%;
-  padding: 0 0;
-  margin: 0 0;
-  border-radius: 50%;
 }
 
 .img-container h4 {
@@ -370,9 +374,12 @@ details[open] > summary::before {
 
 .contact .content {
   width: 100%;
+  margin-top: 100px;
 }
 
 .contact form {
+  justify-content: center;
+  color: #ebebff;
   width: 100%;
 }
 
@@ -392,20 +399,12 @@ details[open] > summary::before {
   margin-bottom: 0;
 }
 
-.contact .content {
-  margin-top: 100px;
-}
-
 .contact p {
   color: #ebebff;
   text-align: center;
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
-}
-
-.contact form {
-  color: #ebebff;
 }
 
 form input,
@@ -417,20 +416,16 @@ form textarea {
   padding-left: 15px;
 }
 
-.contact form {
-  justify-content: center;
-}
-
-form > ul > li > input,
-form > ul > li > textarea {
-  width: 100%;
-}
-
 form textarea {
   resize: none;
   height: 120px;
   padding: 8px 3px;
   padding-left: 15px;
+}
+
+form > ul > li > input,
+form > ul > li > textarea {
+  width: 100%;
 }
 
 form .cta-button:hover {
@@ -455,7 +450,7 @@ form .cta-button:hover {
   header {
     padding: 3% 10%;
   }
-  
+
   header .logo {
     display: none;
   }
@@ -487,7 +482,7 @@ form .cta-button:hover {
   .main-elements {
     padding: 8% 25%;
   }
-  
+
   .main-elements .content h1,
   .main > h2,
   .works > h2,
@@ -564,11 +559,9 @@ form .cta-button:hover {
   }
 
   .languages {
-    /* width: 90px; */
     display: flex;
     flex-direction: row;
     justify-content: left;
-    /* width: 100%; */
   }
 
   .languages .img-container {
