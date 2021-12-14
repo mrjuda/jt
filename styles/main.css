@@ -148,12 +148,12 @@ form p {
 }
 
 .socials {
-  color: rgb(131, 131, 255);
+  color: #2e2eff;
   font-weight: 500;
   padding-bottom: 30px;
 }
 
-.socials h4 {
+.socials h3 {
   height: 24px;
   font-size: 18px;
   font-weight: 500;
@@ -211,14 +211,14 @@ form p {
   display: flex;
   margin-block-start: 5px;
   margin-block-end: 5px;
-  color: #777;
+  color: #575757;
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
 }
 
 .categories .canopy {
-  color: #333;
+  color: #575757;
 }
 
 .keyword {
@@ -377,7 +377,7 @@ details[open] > summary::before {
   border-radius: 10px;
 }
 
-.img-container h4 {
+.img-container h3 {
   padding: 1% 5%;
   font-weight: 500;
   font-size: 100%;
@@ -412,7 +412,7 @@ details[open] > summary::before {
   margin-bottom: 10px;
 }
 
-.contact h4 {
+.contact h3 {
   height: 24px;
   font-size: 18px;
   font-weight: 500;
@@ -603,7 +603,7 @@ form .cta-button:hover {
     border-radius: 50%;
   }
 
-  .img-container h4 {
+  .img-container h3 {
     padding: 1% 5%;
     margin-top: 8%;
     font-weight: 500;
