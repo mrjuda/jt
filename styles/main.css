@@ -239,7 +239,7 @@ form li {
 .keyword li {
   background-color: #ebebff;
   border-radius: 10%;
-  color: #6070ff;
+  color: #0f27ff;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
@@ -263,7 +263,7 @@ form li {
 }
 
 .keyword li:hover {
-  background-color: #6070ff;
+  background-color: #0f27ff;
   color: #fff;
 }
 
@@ -286,7 +286,7 @@ details > ul {
 
 .cta-button {
   color: #396df2;
-  border: 1px solid #6070ff;
+  border: 1px solid #0f27ff;
   width: max-content;
   border-radius: 8px;
   text-align: center;
@@ -612,7 +612,7 @@ form .cta-button:hover {
   }
 
   .contact {
-    background: #6070ff url("../images/bg-contact-desktop.png") no-repeat;
+    background: #0f27ff url("../images/bg-contact-desktop.png") no-repeat;
     background-size: 100%;
     border-radius: 100px 1px 1px 1px;
     padding: 2% 25%;
