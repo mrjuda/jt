@@ -153,7 +153,8 @@ form p {
   padding-bottom: 30px;
 }
 
-.socials h3 {
+.socials h2 {
+  color: #2e2eff;
   height: 24px;
   font-size: 18px;
   font-weight: 500;
