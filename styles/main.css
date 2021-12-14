@@ -286,7 +286,7 @@ details > ul {
 }
 
 .cta-button {
-  color: #0C3CB6;
+  color: #0c3cb6;
   border: 1px solid #0f27ff;
   width: max-content;
   border-radius: 8px;
@@ -300,7 +300,7 @@ details > ul {
 
 form .cta-button {
   text-decoration: none;
-  color: #0C3CB6;
+  color: #0c3cb6;
   border: 1px solid #396df2;
   width: max-content;
   border-radius: 8px;
@@ -313,7 +313,7 @@ form .cta-button {
 }
 
 .cta-button:hover {
-  background-color: #0C3CB6;
+  background-color: #0c3cb6;
   color: #fff;
 }
 
@@ -450,7 +450,7 @@ form > ul > li > textarea {
 }
 
 form .cta-button:hover {
-  background: #0C3CB6;
+  background: #0c3cb6;
   color: #fff;
   text-decoration: none;
 }
