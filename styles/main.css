@@ -399,12 +399,12 @@ details[open] > summary::before {
 
 .contact form {
   justify-content: center;
-  color: #ebebff;
+  color: #595959;
   width: 100%;
 }
 
 .contact h2 {
-  color: #fff;
+  color: #595959;
   text-align: center;
   font-size: 36px;
   line-height: 40px;
@@ -420,7 +420,7 @@ details[open] > summary::before {
 }
 
 .contact p {
-  color: #ebebff;
+  color: #595959;
   text-align: center;
   font-size: 18px;
   line-height: 28px;
