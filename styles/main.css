@@ -389,7 +389,7 @@ details[open] > summary::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fff url("../images/bg-contact-mobile.png") no-repeat;
+  background: #000 url("../images/bg-contact-mobile.png") no-repeat;
   background-size: cover;
 }
 
@@ -400,12 +400,12 @@ details[open] > summary::before {
 
 .contact form {
   justify-content: center;
-  color: #595959;
+  color: #fff;
   width: 100%;
 }
 
 .contact h2 {
-  color: #595959;
+  color: #fff;
   text-align: center;
   font-size: 36px;
   line-height: 40px;
@@ -421,7 +421,7 @@ details[open] > summary::before {
 }
 
 .contact p {
-  color: #595959;
+  color: #fff;
   text-align: center;
   font-size: 18px;
   line-height: 28px;
