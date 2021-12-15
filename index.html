@@ -34,7 +34,7 @@
       </div>
       <div class="name">
         <a href="#">
-          Jud&aacute; Teixeira
+          Jud&aacute; [Accessible]
         </a>
       </div>
       <div class="menu-mobile">
@@ -74,7 +74,7 @@
         </p>
       </div>
       <div class="socials">
-        <h4>LET'S CONNECT</h4>
+        <h2>LET'S CONNECT</h2>
         <ul class="icon-bar">
           <li><a href="#">
             <img src="images/twitter.png" alt="Twitter">
@@ -89,7 +89,7 @@
             <img src="images/github.png" alt="Github">
           </a></li>
           <li><a href="#">
-            <img src="images/instagram.png" alt="Facebook">
+            <img src="images/instagram.png" alt="Instagram">
           </a></li>
         </ul>
       </div>
@@ -123,7 +123,7 @@
 
       <div class="card" id="card2">
         <div class="card-img">
-          <img src="images/pic2.png" alt="MPS project seakpeak">
+          <img src="images/pic2.png" alt="MPS project sneakpeak">
         </div>
         <div class="card-text">
           <h2>Multi-Post Stories</h2>
@@ -147,7 +147,7 @@
 
       <div class="card" id="card3">
         <div class="card-img">
-          <img src="images/pic3.png" alt="Tonic project seakpeak">
+          <img src="images/pic3.png" alt="Facebook 360 sneakpeak">
         </div>
         <div class="card-text">
           <h2>Facebook 360</h2>
@@ -171,7 +171,7 @@
 
       <div class="card" id="card4">
         <div class="card-img">
-          <img src="images/pic4.png" alt="Tonic project seakpeak">
+          <img src="images/pic4.png" alt="Uber navigation sneakpeak">
         </div>
         <div class="card-text">
           <h2>Uber Navigation</h2>
@@ -210,7 +210,7 @@
         </p>
       </div>
       <div class="socials">
-        <h4>LET'S CONNECT</h4>
+        <h2>LET'S CONNECT</h2>
         <ul class="icon-bar">
           <li><a href="#">
             <img src="images/twitter.png" alt="Twitter logo">
@@ -239,19 +239,19 @@
             <li>
               <div class="img-container">
                 <img src="images/javascript.png" alt="css logo">
-                <h4>JavaScript</h4>
+                <h3>JavaScript</h3>
               </div>
             </li>
             <li>
               <div class="img-container">
                 <img src="images/html5.png" alt="css logo">
-                <h4>HTML</h4>
+                <h3>HTML</h3>
               </div>
             </li>
             <li>
               <div class="img-container">
                 <img src="images/css3.png" alt="css logo">
-                <h4>CSS</h4>
+                <h3>CSS</h3>
               </div>
             </li>
           </ul>
@@ -295,16 +295,19 @@
       <form id="contact-form" action="https://formspree.io/f/xwkykkjv" method="post">
         <ul>
           <li>
+            <label for="name">Name</label>
             <input type="text" id="name" name="name" required maxlength="30" placeholder="Your Name">
           </li>
           <li>
+            <label for="mail">Email</label>
             <input type="email" id="mail" name="email" required placeholder="youremail@mail.com">
           </li>
           <li>
-            <textarea id="msg" name="message" required maxlength="500" placeholder="Write your message here"></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required maxlength="500" placeholder="Write your message here"></textarea>
           </li>
           <li>
-            <button type="submit" class="cta-button">
+            <button id="submit" type="submit" class="cta-button">
               Get in touch
             </button>
           </li>
