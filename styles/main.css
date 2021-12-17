@@ -17,7 +17,7 @@ body {
   grid-template-areas:
     'header'
     'main'
-    'works'
+    'portfolio'
     'about';
 }
 
@@ -64,7 +64,7 @@ header {
 }
 
 .main,
-.works {
+.portfolio {
   margin-bottom: 50px;
 }
 
@@ -105,7 +105,7 @@ header img {
 
 .main h1,
 .main h2,
-.works h2,
+.portfolio h2,
 .about h2 {
   color: #172b4d;
   font-size: 40px;
@@ -139,7 +139,7 @@ form p {
 }
 
 .main p,
-.works p,
+.portfolio p,
 .about p {
   color: #344563;
   font-size: 16px;
@@ -185,7 +185,7 @@ form p {
   height: 25px;
 }
 
-.works {
+.portfolio {
   display: grid;
   padding: 15px;
   padding-top: 50px;
@@ -204,7 +204,7 @@ form p {
   padding: 8% 8%;
 }
 
-.works .card img {
+.portfolio .card img {
   width: 100%;
 }
 
@@ -506,7 +506,7 @@ form .cta-button:hover {
 
   .main-elements .content h1,
   .main > h2,
-  .works > h2,
+  .portfolio > h2,
   .about > h2 {
     color: #172b4d;
     font-weight: 700;
