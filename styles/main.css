@@ -2,6 +2,83 @@
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+header a {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.blur,
+.main {
+  filter: blur(2px);
+}
+
+.hide {
+  display: none;
+}
+
+#name-logo {
+  color: #0f27ff !important;
+  font-weight: 700;
+}
+
+.menu-x,
+.menu-hamb {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  font-size: 1.4rem;
+  /* text-align: right; */
+}
+
+.menu-x,
+.menu-hamb,
+.menu-mobile-list li a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.2rem;
+  /* display: none; */
+  z-index: 5;
+}
+
+.menu-mobile-list li {
+  padding: 2rem 2rem;
+}
+
+.menu-mobile-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #0c3cb6;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.menu-mobile-container {
+  padding: -10px -20px;
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  z-index: 20;
+  /* background: #6070ff; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-content: flex-end; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* gap: 0.1rem; */
+  /* display: none; */
+}
+
+.menu-desktop {
+  display: none;
+}
+
+.logo {
+  /* display: none; */
 }
 
 body {
@@ -42,14 +119,6 @@ header {
   padding: 10px 20px;
 }
 
-.menu-desktop {
-  display: none;
-}
-
-.logo {
-  display: none;
-}
-
 .main {
   background: #fff url("../images/bg-main-mobile.png") no-repeat;
   background-size: cover;
@@ -66,21 +135,6 @@ header {
 .main,
 .portfolio {
   margin-bottom: 50px;
-}
-
-header a {
-  color: #0f27ff;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  text-decoration: none;
-  transition: color 0.6s, font-size 0.6s;
-}
-
-header a:hover {
-  border-radius: 2px;
-  color: #394dfd;
-  font-size: 22px;
 }
 
 header img {
@@ -476,7 +530,22 @@ form .cta-button:hover {
     display: none;
   }
 
-  .menu-mobile {
+  header a {
+    color: #0f27ff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    transition: color 0.6s, font-size 0.6s;
+  }
+
+  header a:hover {
+    border-radius: 2px;
+    color: #394dfd;
+    font-size: 19px;
+  }
+
+  .menu-mobile-container {
     display: none;
   }
 

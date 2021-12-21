@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="scripts/main.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215195290-1"></script>
     <script>
@@ -23,19 +22,22 @@
   <div class="grid-container">
   
     <header>
-      <div class="logo">
-        <a href="#">
-          <img src="images/icon.png" alt="JT icon">
+      <div class="name-logo">
+        <a id="name-logo" href="#">Jud&aacute; Teixeira</a>
+      </div>
+      <div class="menu-mobile-container">
+        <a class="menu-hamb" href="#">
+          <img src="images/menu.png" alt="Menu">
         </a>
-      </div>
-      <div class="name" id="name">
-        <a href="#">Jud&aacute; Teixeira</a>
-      </div>
-      <div class="menu-mobile">
+        <a class="menu-x" href="#">
+          <div>X</div>
+        </a>
         <nav>
-          <a href="#">
-            <img src="images/menu.png" alt="Menu">
-          </a>
+          <ul class="menu-mobile-list" id="menu-mobile-list">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
       </div>
       <div class="menu-desktop">
@@ -52,7 +54,9 @@
         </nav>
       </div>
     </header>
-  
+    <div class="menu-mobile-bg">
+        
+    </div>
     <section class="main" id="bg-main">
     <div class="main-elements">
       <div class="content">
@@ -66,6 +70,7 @@
           have a project you need coded, don't 
           hesitate to contact me.
         </p>
+        
       </div>
       <div class="socials">
         <h2>LET'S CONNECT</h2>
@@ -311,6 +316,6 @@
     </div>
     </section> <!-- End of CONTACT-FORM -->
   </div> <!-- End of GRID-CONTAINER -->
-
+  <script src="scripts/main.js"></script>
 </body>
 </html>
