@@ -10,8 +10,7 @@ header a {
   line-height: 20px;
 }
 
-.blur,
-.main {
+.blur {
   filter: blur(2px);
 }
 
@@ -37,18 +36,42 @@ header a {
 .menu-hamb,
 .menu-mobile-list li a {
   color: #fff;
-  font-weight: 700;
-  font-size: 2.2rem;
-  /* display: none; */
+  padding-right: 1rem;
+  font-size: 2rem;
   z-index: 5;
+}
+
+.menu-hamb,
+.menu-mobile-list li a {
+  color: #fff;
+  font-weight: 700;
+}
+
+
+.menu-x {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  margin: 1rem 1rem;
 }
 
 .menu-mobile-list li {
   padding: 2rem 2rem;
 }
 
+.menu-mobile-list,
+.menu-x,
+.menu-mobile-bg {
+  /* display: none; */
+}
+
+.menu-hamb {
+  /* display: none; */
+}
+
 .menu-mobile-bg {
   position: fixed;
+  /* display: flex; */
   width: 100%;
   height: 100%;
   background: #0c3cb6;
@@ -57,20 +80,13 @@ header a {
 }
 
 .menu-mobile-container {
-  padding: -10px -20px;
+  padding-right: 1rem;
   position: fixed;
-  width: 95%;
-  height: 95%;
-  z-index: 20;
-  /* background: #6070ff; */
-  /* display: flex;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
   flex-direction: column;
-  justify-content: right;
-  align-content: flex-end; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
-  /* gap: 0.1rem; */
-  /* display: none; */
 }
 
 .menu-desktop {
@@ -543,6 +559,11 @@ form .cta-button:hover {
     border-radius: 2px;
     color: #394dfd;
     font-size: 19px;
+  }
+
+  .menu-mobile-bg,
+  .menu-hamb {
+    display: none;
   }
 
   .menu-mobile-container {
