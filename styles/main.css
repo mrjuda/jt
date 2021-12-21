@@ -2,7 +2,94 @@
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
+
+header a {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.blur {
+  filter: blur(2px);
+}
+
+#name-logo {
+  color: #0f27ff !important;
+  font-weight: 700;
+}
+
+.menu-x,
+.menu-hamb {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  font-size: 1.4rem;
+  /* text-align: right; */
+}
+
+.menu-x,
+.menu-hamb,
+.menu-mobile-list li a {
+  color: #fff;
+  padding-right: 1rem;
+  font-size: 2rem;
+  z-index: 5;
+}
+
+.menu-hamb,
+.menu-mobile-list li a {
+  color: #fff;
+  font-weight: 700;
+}
+
+
+.menu-x {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  margin: 1rem 1rem;
+}
+
+.menu-mobile-list li {
+  padding: 2rem 2rem;
+}
+
+.menu-mobile-list,
+.menu-x,
+.menu-mobile-bg {
+  /* display: none; */
+}
+
+
+.menu-mobile-bg {
+  position: fixed;
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  background: #0c3cb6;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.menu-mobile-container {
+  padding-right: 1rem;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.menu-desktop ul{
+  display: none;
+}
+
 
 body {
   background-color: lightgray;
@@ -42,14 +129,6 @@ header {
   padding: 10px 20px;
 }
 
-.menu-desktop {
-  display: none;
-}
-
-.logo {
-  display: none;
-}
-
 .main {
   background: #fff url("../images/bg-main-mobile.png") no-repeat;
   background-size: cover;
@@ -66,21 +145,6 @@ header {
 .main,
 .portfolio {
   margin-bottom: 50px;
-}
-
-header a {
-  color: #0f27ff;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  text-decoration: none;
-  transition: color 0.6s, font-size 0.6s;
-}
-
-header a:hover {
-  border-radius: 2px;
-  color: #394dfd;
-  font-size: 22px;
 }
 
 header img {
@@ -466,33 +530,65 @@ form .cta-button:hover {
 }
 
 /* ##### DESKTOP DESIGN ##### */
+/* ##### DESKTOP DESIGN ##### */
+/* ##### DESKTOP DESIGN ##### */
+/* ##### DESKTOP DESIGN ##### */
 
 @media screen and (min-width: 992px) {
   header {
     padding: 3% 10%;
+    align-items: center;
   }
 
   header .logo {
     display: none;
   }
 
-  .menu-mobile {
+  header a {
+    color: #172b4d;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    transition: color 0.6s, font-size 0.6s;
+  }
+
+  header a:hover {
+    font-weight: 700;
+    border-radius: 2px;
+    color: #394dfd;
+    font-size: 19px;
+  }
+
+
+  .menu-desktop .menu-hamb img {
     display: none;
   }
 
-  .menu-desktop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .menu-mobile-container {
+    display: none;
   }
 
-  .menu-desktop a {
+ .menu-desktop {
     color: #344563;
     justify-content: space-between;
-    padding: 10px 12px;
+    align-items: center;
+    /* padding: 10px 12px; */
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .menu-desktop a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+  }
+
+  .menu-desktop .menu-desktop-item{
+    display: flex;
   }
 
   .main {
