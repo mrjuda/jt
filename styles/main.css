@@ -530,10 +530,14 @@ form .cta-button:hover {
 }
 
 /* ##### DESKTOP DESIGN ##### */
+/* ##### DESKTOP DESIGN ##### */
+/* ##### DESKTOP DESIGN ##### */
+/* ##### DESKTOP DESIGN ##### */
 
 @media screen and (min-width: 992px) {
   header {
     padding: 3% 10%;
+    align-items: center;
   }
 
   header .logo {
@@ -541,8 +545,8 @@ form .cta-button:hover {
   }
 
   header a {
-    color: #0f27ff;
-    font-weight: 700;
+    color: #172b4d;
+    font-weight: 500;
     font-size: 18px;
     line-height: 20px;
     text-decoration: none;
@@ -550,11 +554,16 @@ form .cta-button:hover {
   }
 
   header a:hover {
+    font-weight: 700;
     border-radius: 2px;
     color: #394dfd;
     font-size: 19px;
   }
 
+
+  .menu-desktop .menu-hamb img {
+    display: none;
+  }
 
   .menu-mobile-container {
     display: none;
@@ -563,7 +572,8 @@ form .cta-button:hover {
  .menu-desktop {
     color: #344563;
     justify-content: space-between;
-    padding: 10px 12px;
+    align-items: center;
+    /* padding: 10px 12px; */
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -572,11 +582,9 @@ form .cta-button:hover {
   .menu-desktop a{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
     align-items: center;
-  }
-
-  .menu-desktop .menu-hamb{
-    display: none;
   }
 
   .menu-desktop .menu-desktop-item{

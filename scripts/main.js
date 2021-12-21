@@ -2,6 +2,9 @@ const menuHamb = document.querySelector(".menu-hamb"); //hambuger menu
 const menuX = document.querySelector(".menu-x"); //closing icon
 const menuMobileContainer = document.querySelector('.menu-mobile-container') //mobil menu
 const menuMobileBg = document.querySelector(".menu-mobile-bg");
+const portfolioBtn = document.querySelector(".portfolio-btn")
+const aboutBtn = document.querySelector(".about-btn")
+const contactBtn = document.querySelector(".contact-btn")
 
 
 
@@ -38,6 +41,25 @@ menuX.addEventListener('click', ()=>{
   menuHamb.style.display = 'flex';
   menuX.style.display = 'none';
   menuMobileBg.style.display = 'none';
-})
+});
 
+portfolioBtn.addEventListener('click', ()=>{
+  menuMobileContainer.style.display = 'none';
+  menuHamb.style.display = 'flex';
+  menuX.style.display = 'none';
+  menuMobileBg.style.display = 'none';
+});
 
+aboutBtn.addEventListener('click', ()=>{
+  menuMobileContainer.style.display = 'none';
+  menuHamb.style.display = 'flex';
+  menuX.style.display = 'none';
+  menuMobileBg.style.display = 'none';
+});
+
+contactBtn.addEventListener('click', ()=>{
+  menuMobileContainer.style.display = 'none';
+  menuHamb.style.display = 'flex';
+  menuX.style.display = 'none';
+  menuMobileBg.style.display = 'none';
+});
