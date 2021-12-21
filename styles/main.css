@@ -14,10 +14,6 @@ header a {
   filter: blur(2px);
 }
 
-.hide {
-  display: none;
-}
-
 #name-logo {
   color: #0f27ff !important;
   font-weight: 700;
@@ -65,9 +61,6 @@ header a {
   /* display: none; */
 }
 
-.menu-hamb {
-  /* display: none; */
-}
 
 .menu-mobile-bg {
   position: fixed;
@@ -89,13 +82,14 @@ header a {
   flex-direction: column;
 }
 
-.menu-desktop {
+.hide {
   display: none;
 }
 
-.logo {
-  /* display: none; */
+.menu-desktop ul{
+  display: none;
 }
+
 
 body {
   background-color: lightgray;
@@ -561,28 +555,32 @@ form .cta-button:hover {
     font-size: 19px;
   }
 
-  .menu-mobile-bg,
-  .menu-hamb {
-    display: none;
-  }
 
   .menu-mobile-container {
     display: none;
   }
 
-  .menu-desktop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .menu-desktop a {
+ .menu-desktop {
     color: #344563;
     justify-content: space-between;
     padding: 10px 12px;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .menu-desktop a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu-desktop .menu-hamb{
+    display: none;
+  }
+
+  .menu-desktop .menu-desktop-item{
+    display: flex;
   }
 
   .main {
