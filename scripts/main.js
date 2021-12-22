@@ -7,7 +7,13 @@ const aboutBtn = document.querySelector('.about-btn');
 const contactBtn = document.querySelector('.contact-btn');
 const main = document.querySelectorAll('.main');
 
-
+menuHamb.addEventListener('click', () => {
+    menuMobileContainer.style.display = 'flex';
+    menuHamb.style.display = 'none';
+    menuX.style.display = 'flex';
+    menuMobileBg.style.display = 'flex';
+    main.classList.add('.blur');
+  });
 
 // const portfolio = document.querySelectorAll('.portfolio');
 // const about = document.querySelectorAll('.about');
