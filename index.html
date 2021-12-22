@@ -20,38 +20,35 @@
 <body>
   
   <div class="grid-container">
-  
     <header>
-      <div class="logo">
-        <a href="#">
-          <img src="images/icon.png" alt="JT icon">
+      <div class="name-logo">
+        <a id="name-logo" href="#">Jud&aacute; Teixeira</a>
+      </div>
+      <nav class="menu-mobile-container hide">
+        <a class="menu-x" href="#">
+          <div>X</div>
         </a>
-      </div>
-      <div class="name">
-        <a href="#">Jud&aacute; Teixeira</a>
-      </div>
-      <div class="menu-mobile">
-        <nav>
-          <a href="#">
-            <img src="images/menu.png" alt="Menu">
-          </a>
-        </nav>
-      </div>
-      <div class="menu-desktop">
-        <nav>
-          <a href="#Portfolio">
-            Portfolio
-          </a>
-          <a href="#About">
-            About
-          </a>
-          <a href="#Contact">
-            Contact
-          </a>
-        </nav>
-      </div>
+        <ul class="menu-mobile-list">
+          <li class="portfolio-btn"><a href="#Portfolio">Portfolio</a></li>
+          <li class="about-btn"><a href="#About">About</a></li>
+          <li class="contact-btn"><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Desktop menu -->
+      <nav class="menu-desktop">
+        <a class="menu-hamb" href="#">
+          <img src="images/menu.png" alt="Menu">
+        </a>
+        <ul class="menu-desktop-item">
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-  
+    <div class="menu-mobile-bg hide">
+    
+    </div>
     <section class="main" id="bg-main">
     <div class="main-elements">
       <div class="content">
@@ -65,6 +62,7 @@
           have a project you need coded, don't 
           hesitate to contact me.
         </p>
+        
       </div>
       <div class="socials">
         <h2>LET'S CONNECT</h2>
@@ -137,7 +135,7 @@
           <div class="cta-button">See Project</div>
         </div>
       </div>
-
+      
       <div class="card" id="card3">
         <div class="card-img">
           <img src="images/pic3.png" alt="Facebook 360 sneakpeak">
@@ -310,5 +308,6 @@
     </div>
     </section> <!-- End of CONTACT-FORM -->
   </div> <!-- End of GRID-CONTAINER -->
+  <script src="scripts/main.js"></script>
 </body>
 </html>
