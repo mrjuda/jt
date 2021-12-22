@@ -22,6 +22,27 @@ menuX.addEventListener("click", () => {
   menuMobileBg.style.display = "none";
 });
 
+portfolioBtn.addEventListener('click', () => {
+  menuMobileContainer.style.display = 'none';
+  menuHamb.style.display = 'flex';
+  menuX.style.display = 'none';
+  menuMobileBg.style.display = 'none';
+});
+
+aboutBtn.addEventListener('click', () => {
+  menuMobileContainer.style.display = 'none';
+  menuHamb.style.display = 'flex';
+  menuX.style.display = 'none';
+  menuMobileBg.style.display = 'none';
+});
+
+contactBtn.addEventListener('click', () => {
+  menuMobileContainer.style.display = 'none';
+  menuHamb.style.display = 'flex';
+  menuX.style.display = 'none';
+  menuMobileBg.style.display = 'none';
+});
+
 // const portfolio = document.querySelectorAll('.portfolio');
 // const about = document.querySelectorAll('.about');
 // const menuMobileList = document.querySelector('.menu-mobile-list');
