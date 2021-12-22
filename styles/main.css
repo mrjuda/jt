@@ -31,7 +31,7 @@ header a {
 .menu-hamb,
 .menu-mobile-list li a {
   color: #fff;
-  padding-right: 1rem;
+  /* padding-right: 1rem; */
   font-size: 2rem;
   z-index: 5;
 }
@@ -46,7 +46,7 @@ header a {
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
-  margin: 1rem 1rem;
+  margin: 0.4rem 2rem;
 }
 
 form li {
