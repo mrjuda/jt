@@ -63,6 +63,7 @@ form li {
   height: 100%;
   background-color: rgba(1, 42, 145, 0.6);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   z-index: 1;
 }
 
