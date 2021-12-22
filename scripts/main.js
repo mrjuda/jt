@@ -22,8 +22,6 @@ menuX.addEventListener('click', () => {
   menuMobileBg.style.display = 'none';
 });
 
-
-
 // const portfolio = document.querySelectorAll('.portfolio');
 // const about = document.querySelectorAll('.about');
 // const menuMobileList = document.querySelector('.menu-mobile-list');
