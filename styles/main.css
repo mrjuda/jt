@@ -80,6 +80,11 @@ form li {
   display: none;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 details > ul {
   padding-bottom: 1rem;
   margin-bottom: 0;
@@ -88,11 +93,6 @@ details > ul {
 form ul {
   display: flex;
   flex-direction: column;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
 }
 
 .menu-desktop ul {
@@ -557,7 +557,7 @@ form .cta-button:hover {
     color: #394dfd;
     font-size: 19px;
   }
-  
+
   .img-container img {
     width: 48px;
     height: auto;
@@ -573,7 +573,7 @@ form .cta-button:hover {
   .menu-mobile-container {
     display: none;
   }
-  
+
   .menu-desktop {
     color: #344563;
     justify-content: space-between;

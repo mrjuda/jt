@@ -5,10 +5,10 @@ const menuMobileBg = document.querySelector('.menu-mobile-bg');
 const portfolioBtn = document.querySelector('.portfolio-btn');
 const aboutBtn = document.querySelector('.about-btn');
 const contactBtn = document.querySelector('.contact-btn');
+const main = document.querySelectorAll('.main');
 
-//const main = document.querySelectorAll('.main');
-//const portfolio = document.querySelectorAll('.portfolio');
-//const about = document.querySelectorAll('.about');
+// const portfolio = document.querySelectorAll('.portfolio');
+// const about = document.querySelectorAll('.about');
 // const menuMobileList = document.querySelector('.menu-mobile-list');
 // const menuMobileBg = document.querySelector('.menu-mobile-bg');
 // const nameLogo = document.querySelectorAll('.name-logo');
