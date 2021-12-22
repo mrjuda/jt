@@ -1,3 +1,4 @@
+const body = document.querySelector('body');
 const menuHamb = document.querySelector('.menu-hamb');
 const menuX = document.querySelector('.menu-x');
 const menuMobileContainer = document.querySelector('.menu-mobile-container');
@@ -8,6 +9,8 @@ const contactBtn = document.querySelector('.contact-btn');
 const main = document.querySelectorAll('.main');
 
 menuHamb.addEventListener('click', () => {
+  body.style.height = '100vh';
+  body.style.overflow = 'hidden';
   menuMobileContainer.style.display = 'flex';
   menuHamb.style.display = 'none';
   menuX.style.display = 'flex';
@@ -16,6 +19,8 @@ menuHamb.addEventListener('click', () => {
 });
 
 menuX.addEventListener('click', () => {
+  body.style.height = 'auto';
+  body.style.overflow = 'visible';
   menuMobileContainer.style.display = 'none';
   menuHamb.style.display = 'flex';
   menuX.style.display = 'none';
@@ -23,6 +28,8 @@ menuX.addEventListener('click', () => {
 });
 
 portfolioBtn.addEventListener('click', () => {
+  body.style.height = 'auto';
+  body.style.overflow = 'visible';
   menuMobileContainer.style.display = 'none';
   menuHamb.style.display = 'flex';
   menuX.style.display = 'none';
@@ -30,6 +37,8 @@ portfolioBtn.addEventListener('click', () => {
 });
 
 aboutBtn.addEventListener('click', () => {
+  body.style.height = 'auto';
+  body.style.overflow = 'visible';
   menuMobileContainer.style.display = 'none';
   menuHamb.style.display = 'flex';
   menuX.style.display = 'none';
@@ -37,6 +46,8 @@ aboutBtn.addEventListener('click', () => {
 });
 
 contactBtn.addEventListener('click', () => {
+  body.style.height = 'auto';
+  body.style.overflow = 'visible';
   menuMobileContainer.style.display = 'none';
   menuHamb.style.display = 'flex';
   menuX.style.display = 'none';
