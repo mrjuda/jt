@@ -31,7 +31,6 @@ header a {
 .menu-hamb,
 .menu-mobile-list li a {
   color: #fff;
-  /* padding-right: 1rem; */
   font-size: 2rem;
   z-index: 5;
 }
@@ -260,7 +259,8 @@ form p {
   padding-bottom: 50px;
 }
 
-.card {
+.card,
+.popup {
   display: flex;
   flex-direction: column;
   flex-basis: content;
@@ -272,7 +272,8 @@ form p {
   padding: 8% 8%;
 }
 
-.portfolio .card img {
+.card img,
+.popup img {
   width: 100%;
 }
 
@@ -350,6 +351,48 @@ form p {
   line-height: 24px;
   font-weight: 400;
   cursor: pointer;
+}
+
+.popup-cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cta-button-popup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0c3cb6;
+  border: 1px solid #0f27ff;
+  margin-right: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  width: 10rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  /* padding: 12px; */
+  /* font-size: 1rem; */
+  /* line-height: 24px; */
+}
+
+.cta-button-popup:hover {
+  background-color: #0c3cb6;
+  color: #fff;
+}
+
+.cta-button-popup h2 {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  /* color: #0c3cb6; */
+  
+}
+
+.cta-button-popup img {
+  height: 2rem;
+  width: auto;
 }
 
 form .cta-button {
@@ -626,6 +669,14 @@ form .cta-button:hover {
 
   .card-img {
     width: 100%;
+  }
+
+  .popup-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.6rem;
   }
 
   #card1 {
